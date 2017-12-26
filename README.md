@@ -1,1 +1,1 @@
-### C++ code for implementation opencv tutorial
+### C++ code implementation for opencv tutorial
