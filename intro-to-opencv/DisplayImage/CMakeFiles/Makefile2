@@ -54,45 +54,45 @@ RM = /usr/local/Cellar/cmake/3.10.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage
+CMAKE_SOURCE_DIR = /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage
+CMAKE_BINARY_DIR = /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage
 
 #=============================================================================
-# Target rules for target CMakeFiles/DisplayImage.dir
+# Target rules for target CMakeFiles/DisplayImage.o.dir
 
 # All Build rule for target.
-CMakeFiles/DisplayImage.dir/all:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/depend
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles --progress-num=1,2 "Built target DisplayImage"
-.PHONY : CMakeFiles/DisplayImage.dir/all
+CMakeFiles/DisplayImage.o.dir/all:
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/depend
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles --progress-num=1,2 "Built target DisplayImage.o"
+.PHONY : CMakeFiles/DisplayImage.o.dir/all
 
 # Include target in all.
-all: CMakeFiles/DisplayImage.dir/all
+all: CMakeFiles/DisplayImage.o.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DisplayImage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DisplayImage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles 0
-.PHONY : CMakeFiles/DisplayImage.dir/rule
+CMakeFiles/DisplayImage.o.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DisplayImage.o.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles 0
+.PHONY : CMakeFiles/DisplayImage.o.dir/rule
 
 # Convenience name for target.
-DisplayImage: CMakeFiles/DisplayImage.dir/rule
+DisplayImage.o: CMakeFiles/DisplayImage.o.dir/rule
 
-.PHONY : DisplayImage
-
-# clean rule for target.
-CMakeFiles/DisplayImage.dir/clean:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/clean
-.PHONY : CMakeFiles/DisplayImage.dir/clean
+.PHONY : DisplayImage.o
 
 # clean rule for target.
-clean: CMakeFiles/DisplayImage.dir/clean
+CMakeFiles/DisplayImage.o.dir/clean:
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/clean
+.PHONY : CMakeFiles/DisplayImage.o.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DisplayImage.o.dir/clean
 
 .PHONY : clean
 

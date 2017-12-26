@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.10.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage
+CMAKE_SOURCE_DIR = /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage
+CMAKE_BINARY_DIR = /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named DisplayImage.o
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+DisplayImage.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage.o
+.PHONY : DisplayImage.o
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+DisplayImage.o/fast:
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/build
+.PHONY : DisplayImage.o/fast
 
 DisplayImage.o: DisplayImage.cpp.o
 
@@ -129,7 +129,7 @@ DisplayImage.o: DisplayImage.cpp.o
 
 # target to build an object file
 DisplayImage.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/DisplayImage.cpp.o
 .PHONY : DisplayImage.cpp.o
 
 DisplayImage.i: DisplayImage.cpp.i
@@ -138,7 +138,7 @@ DisplayImage.i: DisplayImage.cpp.i
 
 # target to preprocess a source file
 DisplayImage.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/DisplayImage.cpp.i
 .PHONY : DisplayImage.cpp.i
 
 DisplayImage.s: DisplayImage.cpp.s
@@ -147,7 +147,7 @@ DisplayImage.s: DisplayImage.cpp.s
 
 # target to generate assembly for a file
 DisplayImage.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
+	$(MAKE) -f CMakeFiles/DisplayImage.o.dir/build.make CMakeFiles/DisplayImage.o.dir/DisplayImage.cpp.s
 .PHONY : DisplayImage.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... DisplayImage"
+	@echo "... DisplayImage.o"
 	@echo "... DisplayImage.o"
 	@echo "... DisplayImage.i"
 	@echo "... DisplayImage.s"

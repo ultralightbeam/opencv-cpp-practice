@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/dasein/opencv-cpp-practice/1-intro-to-opencv/DisplayImage/DisplayImage.cpp
+/Users/dasein/opencv-cpp-practice/intro-to-opencv/DisplayImage/DisplayImage.cpp
 stdio.h
 -
 opencv2/opencv.hpp

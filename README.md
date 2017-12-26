@@ -1,1 +1,1 @@
-### C++ code implementation for opencv tutorial
+### C++ sketches for opencv basics
